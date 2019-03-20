@@ -54,9 +54,14 @@ form {
   flex-direction: column;
 }
 
-.form-container p {
+.form-container p,
+.form-container-mobile p {
   font-size: 1.5em;
   font-style: italic;
+}
+
+.form-container-mobile {
+  display: none;
 }
 
 .btn-input {
@@ -69,6 +74,10 @@ form {
 .form-control {
   border-radius: 0px;
   background-clip: unset;
+}
+
+.scroll {
+  display: none;
 }
 
 .content {
@@ -88,8 +97,9 @@ form {
 
 .card-concept .icon {
   font-size: 72px;
-  width: 72px;
+  width: 100px;
   text-align: center;
+  flex-shrink: 0;
 }
 
 .card-concept .description {
@@ -106,5 +116,71 @@ form {
 @media(max-width: 576px) {
   .header {
     background-size: cover;
+    padding: 20px 0;
+    height: 100vh;
+  }
+
+  .form-container {
+    display: none;
+  }
+
+  .form-container-mobile {
+    display: block;
+  }
+
+  .form-control {
+    text-align: center;
+  }
+
+  .btn-input {
+    width: 100%;
+  }
+
+  h1 {
+    margin: 80px 0;
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-weight: normal;
+    font-size: 1.5em;
+    margin-bottom: 24px;
+  }
+
+  .card-concept {
+    padding: 16px;
+  }
+
+  .card-concept .icon {
+    font-size: 40px;
+    width: 50px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .scroll {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    font-size: 40px;
+    left: 50%;
+  }
+
+  .bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translate(-50%, 0);
+    }
+    40% {
+      transform: translate(-50%,-10px);
+    }
+    60% {
+      transform: translate(-50%,-5px);
+    }
   }
 }

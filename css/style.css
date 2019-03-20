@@ -117,7 +117,7 @@ form {
   .header {
     background-size: cover;
     padding: 20px 0;
-    height: 100vh;
+    /*height: 100vh;*/
   }
 
   .form-container {

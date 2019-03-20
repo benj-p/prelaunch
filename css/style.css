@@ -59,6 +59,7 @@ form {
 .btn-input {
   background-color: #F7D939;
   color: black;
+  font-weight: bold;
   border-radius: 0px;
 }
 
@@ -75,14 +76,16 @@ form {
   padding: 24px;
   margin-top: 16px;
   border-radius: 4px;
+  align-items: center;
 }
 
 .card-concept .icon {
   font-size: 72px;
+  width: 72px;
 }
 
 .card-concept .description {
-  flex-grow: 1;
+  margin-left: 32px;
 }
 
 @media(max-width: 576px) {

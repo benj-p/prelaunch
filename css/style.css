@@ -24,7 +24,7 @@ h1 span {
 }
 
 h2 {
-  margin-bottom: 48px;
+  /*margin-bottom: 48px;*/
   font-weight: bold;
 }
 
@@ -83,6 +83,27 @@ form {
 
 .content {
   flex: 1 0 auto;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+}
+
+.step-left {
+  margin-right: 20px;
+}
+
+.step-text:first-of-type {
+  margin-bottom: 80px;
+}
+
+.final-step {
+  margin-top: 40px;
+}
+
+.wallet-illustration {
+  text-align: center;
 }
 
 .card-concept {

@@ -13,6 +13,7 @@
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-NMBRX52');</script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,16 +31,16 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMBRX52"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="header">
     <div class="container">
       <h1>Communautests</h1><div class="beta-btn">beta</div>
-      <p>Et si partager ton avis te permettait d'aider la communauté<br/>et de gagner de l’argent ?</p>
+      <p>Et si partager ton expérience te permettait d'aider la communauté<br/>et de gagner de l’argent ?</p>
       <div class="form-container">
         <p>Inscris toi pour recevoir une invitation en avant-première</p>
         <form class="validate form-inline text-center" action="https://gmail.us20.list-manage.com/subscribe/post?u=1032adc8ab5e905f4f983093b&amp;id=acdd1f3640" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
@@ -72,7 +73,7 @@
 
 
   <div class="content container">
-    <div class="row">
+    <div class="row step">
       <div class="col-md-5 col-sm-6 col-12 my-auto">
         <svg viewBox="0 0 457 378" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
@@ -95,7 +96,7 @@
                             <g id="submit-button" transform="translate(27.308559, 283.000000)">
                                 <rect id="Rectangle" fill="#F7D939" x="0" y="0" width="371.396396" height="43" rx="2"></rect>
                                 <text id="Publier-mon-avis" font-family="Poppins-Bold, Poppins" font-size="18" font-weight="bold" fill="#FFFFFF">
-                                    <tspan x="109.483369" y="28">Publier mon avis</tspan>
+                                    <tspan x="109.483369" y="28">Publier mon test</tspan>
                                 </text>
                             </g>
                             <rect id="Rectangle" stroke-opacity="0.292722902" stroke="#979797" fill="#FFFFFF" x="27.8085586" y="20.5" width="370.396396" height="38" rx="4"></rect>
@@ -104,11 +105,10 @@
                             </text>
                             <rect id="Rectangle" stroke-opacity="0.292722902" stroke="#979797" fill="#FFFFFF" x="27.8085586" y="67.5" width="370.396396" height="165" rx="4"></rect>
                             <text id="J’utilise-l’aspirate" font-family="Poppins-Regular, Poppins" font-size="14" font-weight="normal">
-                                <tspan x="41.509009" y="90" fill="#828282">J’utilise l’aspirateur Dyson environ 2 fois par </tspan>
-                                <tspan x="41.509009" y="110" fill="#828282">semaine pour nettoyer mon appartement de </tspan>
-                                <tspan x="41.509009" y="130" fill="#828282">45m2. Il est très maniable et son utilisation sans-</tspan>
-                                <tspan x="41.509009" y="150" fill="#828282">fil me permet de </tspan>
-                                <tspan x="159.991009" y="150" fill="#3992E1">|</tspan>
+                                <tspan x="41.509009" y="90" fill="#828282" class="type-text-1">J’utilise l’aspirateur Dyson environ 2 fois par </tspan>
+                                <tspan x="41.509009" y="110" fill="#828282" class="type-text-2">semaine pour nettoyer mon appartement de </tspan>
+                                <tspan x="41.509009" y="130" fill="#828282" class="type-text-3"></tspan>
+                                <tspan x="41.509009" y="150" fill="#828282" class="type-text-4"></tspan>
                             </text>
                             <g id="rating" transform="translate(27.308559, 245.000000)" stroke="#979797">
                                 <polygon id="Star" fill="#F7D939" points="14.2004505 19.5 5.8536351 23.5172209 7.44773498 15.0086105 0.695019515 8.98277907 10.0270428 7.74138954 14.2004505 0 18.3738581 7.74138954 27.7058814 8.98277907 20.9531659 15.0086105 22.5472658 23.5172209"></polygon>
@@ -124,13 +124,25 @@
         </svg>
       </div>
 
+      <script>
+        var typed = new Typed('.type-text-3', {
+          strings: ["45m2. Il est très maniable et son utilisation sans-"],
+          typeSpeed: 30,
+          callback: new Typed('.type-text-4', {
+          strings: ["fil me permet de..."],
+          typeSpeed: 30,
+          startDelay: 3000})
+
+        });
+      </script>
+
       <div class="col-md-7 col-sm-6 my-auto">
         <h2>1. Rédige un test détaillé</h2>
         <p>Rédige un test détaillé au sujet d’un produit que tu as l’habitude d’utiliser.</p>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row step">
       <div class="col-md-7 my-auto">
         <div class="step-text">
           <h2>2. Ton test est publié</h2>
@@ -144,7 +156,7 @@
       <div class="col-md-5 my-auto">
         <svg viewBox="0 0 569 443" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
-                <rect id="path-2" x="0.695021639" y="0" width="529.745493" height="188" rx="8"></rect>
+                <rect id="path-test-card" x="0.695021639" y="0" width="529.745493" height="188" rx="8"></rect>
                 <filter x="-5.7%" y="-16.0%" width="111.3%" height="131.9%" filterUnits="objectBoundingBox" id="filter-2">
                     <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
                     <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
@@ -173,9 +185,9 @@
                 <g id="Desktop-HD" transform="translate(-654.000000, -1081.000000)">
                     <g id="Step-2,-3" transform="translate(235.000000, 1101.000000)">
                         <g id="Step-2,3---illustration" transform="translate(438.197243, 0.000000)">
-                            <g id="test-card" transform="translate(0.333610, 0.000000)">
+                            <g id="test-card" transform="translate(0.000000, 215.000000)">
                                 <g id="Rectangle">
-                                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-2"></use>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-test-card"></use>
                                     <rect stroke-opacity="0.303977273" stroke="#BDBDBD" stroke-width="1" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="1.19502164" y="0.5" width="528.745493" height="187" rx="8"></rect>
                                 </g>
                                 <g id="avatar" transform="translate(18.181766, 15.000000)">
@@ -190,7 +202,7 @@
                                 <text id="Il-y-a-5-jours" font-family="Poppins-Regular, Poppins" font-size="18" font-weight="normal" fill="#B4B4B4">
                                     <tspan x="403.918776" y="42">Il y a 5 jours</tspan>
                                 </text>
-                                <g id="votes" transform="translate(18.181766, 133.000000)">
+                                <g id="votes" transform="translate(17.802757, 137.000000)">
                                     <path d="M6.4999845,14.0000334 C7.3284127,14.0000334 7.99998093,14.6716016 7.99998093,15.5000298 L7.99998093,30.499994 C7.99998093,31.3284222 7.3284127,31.9999905 6.4999845,31.9999905 L1.49999642,31.9999905 C0.671568223,31.9999905 0,31.3284222 0,30.499994 L0,15.5000298 C0,14.6716016 0.671568223,14.0000334 1.49999642,14.0000334 L6.4999845,14.0000334 Z M3.99999046,29.4999964 C4.82841866,29.4999964 5.49998689,28.8284282 5.49998689,28 C5.49998689,27.1715718 4.82841866,26.5000036 3.99999046,26.5000036 C3.17156226,26.5000036 2.49999404,27.1715718 2.49999404,28 C2.49999404,28.8284282 3.17156226,29.4999964 3.99999046,29.4999964 Z M23.9999428,5.0908139 C23.9999428,7.74180855 22.3768387,9.22880452 21.9201138,11.0000405 L28.2778256,11.0000405 C30.3651009,11.0000405 31.9900971,12.7341673 31.9998627,14.6311354 C32.0051117,15.7522875 31.5282451,16.9591938 30.7848997,17.7059572 L30.7780638,17.7128541 C31.3928085,19.1714078 31.2928331,21.2151651 30.1962781,22.6796391 C30.7388793,24.2980435 30.1920057,26.2861369 29.1724158,27.3519303 C29.4410309,28.4517811 29.3126743,29.3878751 28.7882004,30.1414134 C27.5125687,31.9741727 24.3509551,31.9999905 21.6773775,31.9999905 L21.4995825,31.9999294 C18.4816454,31.9988918 16.0117416,30.9000785 14.0270662,30.0171461 C13.0297541,29.5734215 11.7258021,29.0241675 10.7364246,29.005979 C10.3276731,28.9984717 9.99997616,28.6649154 9.99997616,28.2561029 L9.99997616,14.8955391 C9.99997616,14.6955273 10.0801151,14.5035722 10.2223267,14.3629476 C12.6982119,11.9164812 13.7628456,9.32627743 15.7921376,7.29356743 C16.7173674,6.36656769 17.0539144,4.96630248 17.379231,3.61217973 C17.6571234,2.45587145 18.2385429,6.67572021e-05 19.4999535,6.67572021e-05 C20.9999499,6.67572021e-05 23.9999428,0.500065565 23.9999428,5.0908139 Z" id="t" fill="#F7D939" fill-rule="nonzero"></path>
                                     <text id="152-votes" font-family="Poppins-Regular, Poppins" font-size="18" font-weight="normal" fill="#B4B4B4">
                                         <tspan x="54.5174973" y="26">152 votes</tspan>
@@ -200,8 +212,14 @@
                                     <tspan x="20.2390301" y="84">J’utilise l’aspirateur Dyson environ 2 fois par </tspan>
                                     <tspan x="20.2390301" y="111">semaine pour nettoyer mon appartement…</tspan>
                                 </text>
+                                <g id="submit-button" transform="translate(299.802757, 137.000000)">
+                                    <rect id="Rectangle" fill="#F7D939" x="0.469146771" y="0" width="209" height="31" rx="2"></rect>
+                                    <text id="Lire-le-test-complet" font-family="Poppins-Bold, Poppins" font-size="18" font-weight="bold" fill="#FFFFFF">
+                                        <tspan x="18.2451468" y="22">Lire le test complet</tspan>
+                                    </text>
+                                </g>
                             </g>
-                            <g id="test-card" transform="translate(0.000000, 215.000000)">
+                            <g id="test-card" transform="translate(0.333610, 0.000000)">
                                 <g id="Rectangle">
                                     <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
                                     <rect stroke-opacity="0.303977273" stroke="#BDBDBD" stroke-width="1" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="1.19502164" y="0.5" width="528.745493" height="187" rx="8"></rect>
@@ -218,7 +236,7 @@
                                 <text id="Il-y-a-5-jours" font-family="Poppins-Regular, Poppins" font-size="18" font-weight="normal" fill="#B4B4B4">
                                     <tspan x="403.918776" y="42">Il y a 5 jours</tspan>
                                 </text>
-                                <g id="votes" transform="translate(18.181766, 133.000000)">
+                                <g id="votes" transform="translate(18.469147, 137.000000)">
                                     <path d="M6.4999845,14.0000334 C7.3284127,14.0000334 7.99998093,14.6716016 7.99998093,15.5000298 L7.99998093,30.499994 C7.99998093,31.3284222 7.3284127,31.9999905 6.4999845,31.9999905 L1.49999642,31.9999905 C0.671568223,31.9999905 0,31.3284222 0,30.499994 L0,15.5000298 C0,14.6716016 0.671568223,14.0000334 1.49999642,14.0000334 L6.4999845,14.0000334 Z M3.99999046,29.4999964 C4.82841866,29.4999964 5.49998689,28.8284282 5.49998689,28 C5.49998689,27.1715718 4.82841866,26.5000036 3.99999046,26.5000036 C3.17156226,26.5000036 2.49999404,27.1715718 2.49999404,28 C2.49999404,28.8284282 3.17156226,29.4999964 3.99999046,29.4999964 Z M23.9999428,5.0908139 C23.9999428,7.74180855 22.3768387,9.22880452 21.9201138,11.0000405 L28.2778256,11.0000405 C30.3651009,11.0000405 31.9900971,12.7341673 31.9998627,14.6311354 C32.0051117,15.7522875 31.5282451,16.9591938 30.7848997,17.7059572 L30.7780638,17.7128541 C31.3928085,19.1714078 31.2928331,21.2151651 30.1962781,22.6796391 C30.7388793,24.2980435 30.1920057,26.2861369 29.1724158,27.3519303 C29.4410309,28.4517811 29.3126743,29.3878751 28.7882004,30.1414134 C27.5125687,31.9741727 24.3509551,31.9999905 21.6773775,31.9999905 L21.4995825,31.9999294 C18.4816454,31.9988918 16.0117416,30.9000785 14.0270662,30.0171461 C13.0297541,29.5734215 11.7258021,29.0241675 10.7364246,29.005979 C10.3276731,28.9984717 9.99997616,28.6649154 9.99997616,28.2561029 L9.99997616,14.8955391 C9.99997616,14.6955273 10.0801151,14.5035722 10.2223267,14.3629476 C12.6982119,11.9164812 13.7628456,9.32627743 15.7921376,7.29356743 C16.7173674,6.36656769 17.0539144,4.96630248 17.379231,3.61217973 C17.6571234,2.45587145 18.2385429,6.67572021e-05 19.4999535,6.67572021e-05 C20.9999499,6.67572021e-05 23.9999428,0.500065565 23.9999428,5.0908139 Z" id="t" fill="#F7D939" fill-rule="nonzero"></path>
                                     <text id="152-votes" font-family="Poppins-Regular, Poppins" font-size="18" font-weight="normal" fill="#B4B4B4">
                                         <tspan x="54.5174973" y="26">152 votes</tspan>
@@ -228,6 +246,12 @@
                                     <tspan x="20.2390301" y="84">J’utilise l’aspirateur Dyson environ 2 fois par </tspan>
                                     <tspan x="20.2390301" y="111">semaine pour nettoyer mon appartement…</tspan>
                                 </text>
+                                <g id="submit-button" transform="translate(300.469147, 138.000000)">
+                                    <rect id="Rectangle" fill="#F7D939" x="0.469146771" y="0" width="209" height="31" rx="2"></rect>
+                                    <text id="Lire-le-test-complet" font-family="Poppins-Bold, Poppins" font-size="18" font-weight="bold" fill="#FFFFFF">
+                                        <tspan x="18.2451468" y="22">Lire le test complet</tspan>
+                                    </text>
+                                </g>
                             </g>
                         </g>
                     </g>
@@ -238,7 +262,7 @@
 
     </div>
 
-    <div class="row">
+    <div class="row step">
       <div class="col-md-5 my-auto">
         <svg viewBox="0 0 448 171" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
@@ -300,9 +324,9 @@
       </div>
     </div>
 
-    <div class="final-step">
+    <div class="step">
         <h2>5. Tu es rémunéré !</h2>
-        <p>Communautests reçoit une commission pour chaque vente générée sur les sites marchands. Nous partageons cette commission avec toi ! Tu es rémunéré en fonction de la popularité de ton test.</p>
+        <p>Communautests reçoit une commission pour chaque vente générée sur les sites marchands. Nous partageons cette commission avec toi&nbsp;! Tu es rémunéré en fonction de la popularité de ton test.</p>
 
         <div class="wallet-illustration">
           <svg width="823px" height="168px" viewBox="0 0 823 168" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

@@ -87,25 +87,12 @@ form {
   flex: 1 0 auto;
 }
 
-.step {
-  display: flex;
-  align-items: center;
-}
-
-.step-text-item {
-  flex-grow: 0;
-}
-
-.step-left {
-  margin-right: 20px;
-}
-
 .step-text:first-of-type {
-  margin-bottom: 5vh;
+  margin-bottom: 60px;
 }
 
-.final-step {
-  margin-top: 40px;
+.step {
+  margin-bottom: 40px;
 }
 
 .wallet-illustration {
@@ -144,8 +131,9 @@ form {
   margin-top: 40px;
   flex-shrink: 0;
   padding: 16px 0;
-  background-color: rgb(220, 220, 220);
+  background-color: #575656;
   text-align: center;
+  color: white;
 }
 
 .footer p {

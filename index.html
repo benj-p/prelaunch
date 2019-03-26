@@ -190,12 +190,13 @@
                                     <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-test-card"></use>
                                     <rect stroke-opacity="0.303977273" stroke="#BDBDBD" stroke-width="1" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="1.19502164" y="0.5" width="528.745493" height="187" rx="8"></rect>
                                 </g>
-                                <g id="avatar" transform="translate(18.181766, 15.000000)">
-                                    <mask id="mask-6" fill="white">
-                                        <use xlink:href="#path-3"></use>
-                                    </mask>
-                                    <use id="Mask" stroke="#979797" fill="url(#pattern-4)" xlink:href="#path-3"></use>
-                                </g>
+
+                                <clipPath id="cut-off-bottom">
+                                  <circle cx="37" cy="35" r="20" />
+                                </clipPath>
+
+                                <image x="0" y="15" xlink:href="img/ben.jpeg" height="50" width="75" clip-path="url(#cut-off-bottom)" ></image>
+
                                 <text id="Benjamin-P." font-family="Poppins-Bold, Poppins" font-size="22" font-weight="bold" fill="#F7D939">
                                     <tspan x="75.7851595" y="43">Benjamin P.</tspan>
                                 </text>
@@ -320,7 +321,7 @@
       </div>
       <div class="col-md-7 my-auto">
         <h2>4. Nous faisons le lien avec les sites marchands</h2>
-        <p>Des liens vers des sites marchands, comme Amazon, sont ajoutés a ton test.</p>
+        <p>Des liens vers des sites e-commerce, comme Amazon, sont ajoutés a ton test.</p>
       </div>
     </div>
 
@@ -329,7 +330,7 @@
         <p>Communautests reçoit une commission pour chaque vente générée sur les sites marchands. Nous partageons cette commission avec toi&nbsp;! Tu es rémunéré en fonction de la popularité de ton test.</p>
 
         <div class="wallet-illustration">
-          <svg width="823px" height="168px" viewBox="0 0 823 168" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <svg viewBox="0 0 823 168" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <defs>
                     <rect id="path-wallet" x="0" y="0" width="783" height="128" rx="8"></rect>
                     <filter x="-3.8%" y="-23.4%" width="107.7%" height="146.9%" filterUnits="objectBoundingBox" id="filter-2">

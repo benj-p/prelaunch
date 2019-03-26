@@ -153,6 +153,10 @@ form {
 }
 
 @media(max-width: 576px) {
+  p, h2 {
+    text-align: center;
+  }
+
   .header {
     background-size: cover;
     padding: 20px 0;
@@ -160,7 +164,8 @@ form {
 
   .beta-btn {
     display: inline-block;
-    margin-bottom: 8vh;
+    margin-bottom: 12vh;
+    padding: 0px 4px;
   }
 
   .form-container {
@@ -169,7 +174,7 @@ form {
 
   .form-container-mobile {
     display: block;
-    margin-top: 8vh;
+    margin-top: 12vh;
   }
 
   .form-control {

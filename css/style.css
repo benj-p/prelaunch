@@ -3,6 +3,12 @@
 html, body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 body {
@@ -195,7 +201,7 @@ form {
     margin-bottom: 24px;
   }
 
-  .card-concept {
+/*  .card-concept {
     padding: 16px;
   }
 
@@ -204,7 +210,7 @@ form {
     width: 50px;
     text-align: center;
     flex-shrink: 0;
-  }
+  }*/
 
   .scroll {
     display: block;

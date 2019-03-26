@@ -29,8 +29,10 @@ h1 {
 }
 
 h2 {
+  padding: 2vh 0px;
   font-size: 28px;
   font-weight: bold;
+  text-align: center;
 }
 
 .header {
@@ -90,6 +92,10 @@ form {
   background-clip: unset;
 }
 
+.form-bottom {
+  margin-top: 0px;
+}
+
 .scroll {
   display: none;
 }
@@ -105,6 +111,7 @@ form {
 .wallet-illustration {
   text-align: center;
 }
+
 /*
 .card-concept {
   display: flex;
@@ -134,11 +141,15 @@ form {
   margin-left: 32px;
 }*/
 
+.bottom-section {
+  background-color: rgba(200,200,200,0.5);
+  padding: 20px 0;
+}
+
 .footer {
-  margin-top: 40px;
   flex-shrink: 0;
   padding: 16px 0;
-  background-color: rgba(150,150,150);
+  background-color: #575656;
   text-align: center;
   color: white;
 }
@@ -159,7 +170,7 @@ form {
 }
 
 @media(max-width: 576px) {
-  p, h2 {
+  p, h2, h3 {
     text-align: center;
   }
 
@@ -191,14 +202,22 @@ form {
     width: 100%;
   }
 
+  .form-bottom {
+    margin: 0px 8px;
+  }
+
   h1 {
     font-size: 2em;
   }
 
   h2 {
-    font-weight: normal;
     font-size: 1.5em;
     margin-bottom: 24px;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.5em;
   }
 
 /*  .card-concept {

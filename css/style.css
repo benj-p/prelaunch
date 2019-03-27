@@ -15,7 +15,7 @@ body {
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
-  color: rgb(50,50,50);
+  color: rgb(70,70,70);
   background: rgb(255,255,255);
   background: -webkit-linear-gradient(rgba(255,255,255,1) 0%, rgba(247,217,57,0.2) 100%);
   background: -o-linear-gradient(rgba(255,255,255,1) 0%, rgba(247,217,57,0.2) 100%);
@@ -30,8 +30,8 @@ h1 {
 
 h2 {
   padding: 2vh 0px;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 2.5em;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -105,7 +105,7 @@ form {
 }
 
 .step {
-  margin-bottom: 28px;
+  /*margin-bottom: 16px;*/
 }
 
 .wallet-illustration {
@@ -144,6 +144,7 @@ form {
 .bottom-section {
   background-color: rgba(200,200,200,0.5);
   padding: 20px 0;
+  margin-top: 16px;
 }
 
 .footer {

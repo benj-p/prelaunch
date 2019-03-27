@@ -104,10 +104,6 @@ form {
   flex: 1 0 auto;
 }
 
-.step {
-  /*margin-bottom: 16px;*/
-}
-
 .wallet-illustration {
   text-align: center;
 }
@@ -201,6 +197,10 @@ form {
 
   .btn-input {
     width: 100%;
+  }
+
+  .step {
+    margin-bottom: 16px;
   }
 
   .form-bottom {

@@ -150,7 +150,7 @@ form {
 
   .beta-btn {
     display: inline-block;
-    margin-bottom: 6vh;
+    margin-bottom: 8vh;
     padding: 0px 4px;
   }
 
@@ -180,7 +180,7 @@ form {
   }
 
   .form-bottom {
-    margin: 0px 8px;
+    margin: 0px 0px;
   }
 
   .bottom-section {

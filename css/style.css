@@ -4,6 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  overflow-x:hidden;
 }
 
 a, a:visited {
@@ -138,6 +139,34 @@ form {
   justify-content: center;
 }
 
+.bounce {
+  -moz-animation: bounce 2s 3;
+  -webkit-animation: bounce 2s 3;
+  animation: bounce 2s 3;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translate(0, 0);
+  }
+  40% {
+    transform: translate(0,-10px);
+  }
+  60% {
+    transform: translate(0,-5px);
+  }
+}
+
+canvas {
+  position: absolute;
+  left: -50;
+  top: -250;
+  height: 500px;
+  width: 500px;
+  display: none;
+  z-index: -1;
+}
+
 @media(max-width: 576px) {
   p, h2, h3 {
     text-align: center;
@@ -206,23 +235,5 @@ form {
     display: block;
     margin-top: 20px;
     font-size: 40px;
-  }
-
-  .bounce {
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
-  }
-
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translate(0, 0);
-    }
-    40% {
-      transform: translate(0,-10px);
-    }
-    60% {
-      transform: translate(0,-5px);
-    }
   }
 }

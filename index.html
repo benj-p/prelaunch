@@ -14,6 +14,7 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-NMBRX52');</script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -77,7 +78,7 @@
 
     <h2>C'est quoi le concept ?</h2>
 
-    <div class="row step">
+    <div class="row step step-1">
       <div class="col-md-5 col-sm-6 col-12 my-auto">
         <svg viewBox="0 0 457 383" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
@@ -120,10 +121,10 @@
                                 <path d="M362.40174,53.3918051 L369.440387,46.4316941" id="Line" stroke="#CADEFC" stroke-width="0.7" stroke-linecap="square" transform="translate(365.556656, 49.881331) rotate(-0.000000) translate(-365.556656, -49.881331) "></path>
                                 <path d="M365.5,53.5 L369.5,49.5" id="Line" stroke="#CADEFC" stroke-width="0.7" stroke-linecap="square"></path>
                                 <text id="Donnez-votre-avis-su" font-family="Helvetica" font-size="10" font-weight="normal" fill="#828282" fill-opacity="0.570367133">
-                                    <tspan x="8" y="35">Donnez votre avis sur la performace du </tspan>
-                                    <tspan x="185.304688" y="35" font-family="Helvetica-Oblique, Helvetica" font-style="italic">Dyson V6</tspan>
-                                    <tspan x="232" y="35"> sur le critère </tspan>
-                                    <tspan x="289.230469" y="35" font-family="Helvetica-Oblique, Helvetica" font-style="italic">Bruit</tspan>
+                                    <tspan x="8" y="35">Donnez votre avis sur la performance du </tspan>
+                                    <tspan x="191" y="35" font-family="Helvetica-Oblique, Helvetica" font-style="italic">Dyson V6</tspan>
+                                    <tspan x="237" y="35"> sur le critère </tspan>
+                                    <tspan x="294" y="35" font-family="Helvetica-Oblique, Helvetica" font-style="italic">Bruit</tspan>
                                 </text>
                                 <g id="field-title" transform="translate(7.000000, 0.000000)">
                                     <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="36" height="16"></rect>
@@ -145,8 +146,8 @@
                                 <path d="M362.40174,53.3918051 L369.440387,46.4316941" id="Line" stroke="#E0E0E0" stroke-width="0.7" stroke-linecap="square" transform="translate(365.556656, 49.881331) rotate(-0.000000) translate(-365.556656, -49.881331) "></path>
                                 <path d="M365.5,53.5 L369.5,49.5" id="Line" stroke="#E0E0E0" stroke-width="0.7" stroke-linecap="square"></path>
                                 <text id="Le-faible-poids-de-c" font-family="Poppins-Regular, Poppins" font-size="10" font-weight="normal" fill="#828282">
-                                    <tspan x="8" y="30">Le faible poids de cet aspirateur, ainsi que sa gâchette parfaitement </tspan>
-                                    <tspan x="8" y="45">placée le rendent ultra maniable. Aspirer dans les moindres recoins….</tspan>
+                                    <tspan id="type-text-1" x="8" y="30"></tspan>
+                                    <tspan id="type-text-2" x="8" y="45"></tspan>
                                 </text>
                                 <g id="field-title" transform="translate(7.000000, 0.000000)">
                                     <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="77" height="16"></rect>
@@ -212,15 +213,50 @@
       </div>
 
       <script>
-        var typed = new Typed('.type-text-3', {
-          strings: ["45m2. Il est très maniable et son utilisation sans-"],
-          typeSpeed: 30,
-          callback: new Typed('.type-text-4', {
-          strings: ["fil me permet de..."],
-          typeSpeed: 30,
-          startDelay: 3000})
+        function onViewport(el, elClass, offset, callback) {
+          var didScroll = false;
+          var this_top;
+          var height;
+          var top;
 
+          if(!offset) { var offset = 0; }
+
+          $(window).scroll(function() {
+              didScroll = true;
+          });
+
+          setInterval(function() {
+            if (didScroll) {
+              didScroll = false;
+              top = $(this).scrollTop();
+
+              $(el).each(function(i){
+                this_top = $(this).offset().top - offset;
+                height   = $(this).height();
+
+                // Scrolled within current section
+                if (top >= this_top && !$(this).hasClass(elClass)) {
+                  $(this).addClass(elClass);
+
+                  if (typeof callback == "function") callback(el);
+                }
+              });
+            }
+          }, 100);
+        }
+
+        onViewport(".step-1", "active", 300, function() {
+            var typed = new Typed('#type-text-1', {
+            strings: ["Le faible poids de cet aspirateur, ainsi que sa gâchette parfaitement "],
+            typeSpeed: 30,
+            callback: new Typed('#type-text-2', {
+            strings: ["placée le rendent ultra maniable. Aspirer dans les moindres recoins…."],
+            typeSpeed: 30,
+            startDelay: 3500})
+          });
         });
+
+
       </script>
 
       <div class="col-md-7 col-sm-6 my-auto order-first order-md-last">

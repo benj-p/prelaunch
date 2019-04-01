@@ -172,7 +172,11 @@ form {
   }
 
   .step {
-    margin-bottom: 20px;
+    margin-bottom: 32px;
+  }
+
+  .step:last-of-type {
+    margin-bottom: 0px;
   }
 
   .form-bottom {

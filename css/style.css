@@ -89,6 +89,12 @@ form {
   border-radius: 0px;
 }
 
+.confirmation {
+  padding: 0px 16px;
+  border-radius: 4px;
+  margin: 0px 8px;
+}
+
 .form-control {
   border-radius: 0px;
   background-clip: unset;
@@ -145,6 +151,14 @@ form {
   animation: bounce 2s 3;
 }
 
+#merci {
+  text-align: center;
+}
+
+#merci h3 {
+  padding: 24px 0;
+}
+
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translate(0, 0);
@@ -170,6 +184,10 @@ canvas {
 @media(max-width: 576px) {
   p, h2, h3 {
     text-align: center;
+  }
+
+  .mobile-hidden {
+    display: none;
   }
 
   .header {

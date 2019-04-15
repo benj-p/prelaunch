@@ -55,6 +55,16 @@ h2 {
   font-weight: normal;
 }
 
+.btn-thanks {
+  display: inline;
+  background-color: #F7D939;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  padding: 4px 16px;
+  margin: 0px 8px;
+}
+
 .beta-btn {
   display: inline;
   background-color: #F7D939;
@@ -64,6 +74,10 @@ h2 {
   padding: 2px 4px;
   margin-left: 8px;
   vertical-align: super;
+}
+
+.thanks-buttons {
+  margin-top: 8vh;
 }
 
 form {
@@ -87,12 +101,6 @@ form {
   color: white;
   font-weight: bold;
   border-radius: 0px;
-}
-
-.confirmation {
-  padding: 0px 16px;
-  border-radius: 4px;
-  margin: 0px 8px;
 }
 
 .form-control {

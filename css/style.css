@@ -7,7 +7,7 @@ html, body {
   overflow-x:hidden;
 }
 
-a, a:visited {
+a, a:visited, a:hover {
   text-decoration: none;
   color: white;
 }

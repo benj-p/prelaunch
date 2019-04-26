@@ -56,13 +56,17 @@ h2 {
 }
 
 .btn-thanks {
-  display: inline;
   background-color: #F7D939;
   border-radius: 4px;
   color: white;
   font-weight: bold;
   padding: 4px 16px;
   margin: 0px 8px;
+}
+
+.thanks-button-container {
+  margin-top: 8vh;
+  margin-bottom: 8vh;
 }
 
 .beta-btn {
@@ -74,11 +78,6 @@ h2 {
   padding: 2px 4px;
   margin-left: 8px;
   vertical-align: super;
-}
-
-.thanks-buttons {
-  margin-top: 8vh;
-  margin-bottom: 8vh;
 }
 
 form {
@@ -242,6 +241,11 @@ canvas {
   .bottom-section {
     margin-top: 30px;
     padding: 40px 0;
+  }
+
+  .btn-thanks {
+    display: inline-block;
+    margin: 8px 0;
   }
 
   h1 {

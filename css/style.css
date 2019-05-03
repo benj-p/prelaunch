@@ -138,19 +138,23 @@ form {
   color: white;
 }
 
-.footer p {
-  margin: 0;
+.footer-title {
+  margin-bottom: 8px;
 }
 
-.footer span {
-  text-decoration: underline;
-  margin-left: 8px;
-}
-
-.footer-info {
+.footer-contact {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer-contact-channel {
+  margin: 0px 2vw;
+  font-size: 1.5em;
+}
+
+.footer-contact-channel i:hover {
+  color: rgb(200, 200, 200);
 }
 
 .bounce {

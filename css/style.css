@@ -138,12 +138,16 @@ form {
   color: white;
 }
 
+.legal-mentions {
+  font-size: 0.8em;
+}
+
 .footer-title {
   margin-bottom: 8px;
 }
 
 .footer-contact {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
